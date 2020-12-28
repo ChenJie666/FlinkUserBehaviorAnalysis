@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>HotItemsAnalysis</module>
+        <module>NetworkFlowAnalysis</module>
     </modules>
 
     <properties>
@@ -21,8 +22,8 @@
     <dependencies>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-scala_2.11</artifactId>
-            <version>1.12.0</version>
+            <artifactId>flink-streaming-scala_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -31,12 +32,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-table-api-scala-bridge_2.11</artifactId>
+            <artifactId>flink-table-api-scala-bridge_${scala.binary.version}</artifactId>
             <version>${flink.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-table-planner-blink_2.11</artifactId>
+            <artifactId>flink-table-planner-blink_${scala.binary.version}</artifactId>
             <version>${flink.version}</version>
         </dependency>
 
@@ -44,6 +45,12 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>
             <version>${flink.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-common</artifactId>
+            <version>1.12.0</version>
         </dependency>
     </dependencies>
 
