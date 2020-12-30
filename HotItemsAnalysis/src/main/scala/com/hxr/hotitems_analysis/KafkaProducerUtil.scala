@@ -5,7 +5,7 @@ import java.util.Properties
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
 /**
- * @Description:
+ * @Description: 将文件写入到Kakfa中
  * @Author: CJ
  * @Data: 2020/12/26 10:25
  */
