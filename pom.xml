@@ -13,6 +13,8 @@
         <module>NetworkFlowAnalysis</module>
         <module>MarketAnalysis</module>
         <module>AdClickAnalysis</module>
+        <module>LoginFailDetect</module>
+        <module>OrderPayDetect</module>
     </modules>
 
     <properties>
@@ -53,6 +55,12 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-common</artifactId>
             <version>1.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-cep-scala_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
         </dependency>
 
         <dependency>
