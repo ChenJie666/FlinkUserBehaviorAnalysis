@@ -10,7 +10,7 @@ import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.windowing.time.Time
 
 /**
- * @Description: 订单支付实时监控(业务逻辑：匹配同一订单号的create行为和pay行为。如果超时未支付则输出报警。)
+ * @Description: 订单支付实时监控(业务逻辑：匹配同一订单号的create行为和pay行为,分别输出支付订单和超时未支付的订单。)
  * @Author: CJ
  * @Data: 2021/1/6 15:37
  */
